@@ -18,3 +18,13 @@
 			5. Interview (Date, Time, Feedback)
 
 ✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
+- JobVendor
+	- Signup ✔️
+			1. Email Verification. (SMTP MAIL SERVER)
+			2. Otp Verification. (TWILIO API USED)
+	- Signin ✔️
+	- Forgot Password ✔️ (Email Used for Reset Password)
+	- Profile ✔️
+	- Explore (Working)
+
+✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
