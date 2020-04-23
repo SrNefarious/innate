@@ -1,0 +1,195 @@
+<% layout('index') -%>
+<style>
+    [data-toggle="collapse"]:after {
+        display: inline-block;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f054";
+        transform: rotate(90deg);
+        transition: all linear 0.25s;
+        float: right;
+    }
+
+    [data-toggle="collapse"].collapsed:after {
+        transform: rotate(0deg);
+    }
+
+    #accordion {
+        width: 100%;
+    }
+
+    #accordion .card-header {
+        background-color: #ffffff;
+    }
+
+    .main-status {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .main-status [class*="col-"] {
+        white-space: nowrap;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+</style>
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-sm-12 mb-4 mb-xl-0">
+                <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div id="accordion" role="tablist">
+                    <%for(var i =0; i<requirements.length; i++){%>
+                    <div class="card mt-3">
+                        <div class="card-header" role="tab" id="job-list-<%= i+1 %>">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse<%=i+1%>" aria-expanded="true"
+                                    aria-controls="collapse<%=i+1%>">
+                                    <%= requirements[i].profile  %>, <%= requirements[i].address  %> -
+                                    <%= requirements[i].requirements  %>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse<%=i+1%>" class="collapse" role="tabpane<%=i+1%>"
+                            aria-labelledby="heading<%=i+1%>" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 p-3 text-center bg-success text-white">
+                                        Current Status - <%if(requirements[i].verified){%>
+                                        verified
+                                        <%} else {%>
+                                        unverified
+                                        <%}%>
+                                    </div>
+                                    <div class="d-none d-md-block col-md-12 my-3 main-status">
+                                        <div class="row">
+                                            <div class="border col-3">Stage</div>
+                                            <div class="border col-3">
+                                                Sub - Stage
+                                            </div>
+                                            <div class="border col-3">
+                                                Status
+                                            </div>
+                                            <div class="border col-3 text-center">
+                                                Remarks(as of now)
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="align-items-center border col-3 d-flex justify-content-center">
+                                                Requiremeent Broadcast
+                                            </div>
+                                            <div class="border col-3">
+                                                <div class="row">
+                                                    <div class="border-bottom col-12">Req Allotted to BPs
+                                                    </div>
+                                                    <div class="col-12">Req Viewed by BPs</div>
+                                                </div>
+                                            </div>
+                                            <div class="border col-3">
+                                                <div class="row">
+                                                    <div class="border-bottom col-12">Completed</div>
+                                                    <div class="col-12">Completed</div>
+                                                </div>
+                                            </div>
+                                            <div class="border col-3">
+                                                <div class="row">
+                                                    <div class="border-bottom col-12"><%= requirements[i].status.alloted_bp_count %>
+                                        BPs were allotted
+                                        the requirement
+                                    </div>
+                                    <div class="col-12"><%= requirements[i].status.view_count %> Bps viewed the
+                                        requirement</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="align-items-center border col-3 d-flex justify-content-center">
+                                Internal Data Sourcing
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12">Working on the
+                                        Requirements</div>
+                                    <div class="col-12">CV Upload</div>
+                                </div>
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12">Completed</div>
+                                    <div class="col-12">Completed</div>
+                                </div>
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12"><%= requirements[i].status.bookmark_count %> BPs
+                                        have worked on
+                                        the
+                                        requirement
+                                    </div>
+                                    <div class="col-12"><%= requirements[i].status.cv_upload_count %> (Total)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="align-items-center border col-3 d-flex justify-content-center">
+                                Candidate Screening
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12">Candidate Screening -
+                                        BOT</div>
+                                    <div class="col-12">Candidate Screening - INNATE</div>
+                                </div>
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12">Completed</div>
+                                    <div class="col-12">On - Going</div>
+                                </div>
+                            </div>
+                            <div class="border col-3">
+                                <div class="row">
+                                    <div class="border-bottom col-12"><%= requirements[i].status.bot_screening_count %>
+                                    </div>
+                                    <div class="col-12"><%= requirements[i].status.innate_screening_count
+                                        %> out of <%= requirements[i].status.bot_screening_pass
+                                        %> Candidates Screened by
+                                        BOT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="align-items-center border col-3 d-flex justify-content-center">
+                                Candidate sourced out
+                            </div>
+                            <div class="border col-3">
+                                Candidate Sourced out
+                            </div>
+                            <div class="border col-3">
+                                On - Going
+                            </div>
+                            <div class="border col-3">
+                                <%= requirements[i].status.innate_screening_pass
+                                        %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%}%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

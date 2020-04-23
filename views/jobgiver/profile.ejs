@@ -1,0 +1,30 @@
+<% layout('index') -%>
+<div class="main-panel">
+    <div class="content-wrapper">
+
+        <h1>
+            Testing version 1.0.0
+        </h1>
+        <%if(user.profile_verified){%>
+        <h1>
+            Profile Verified
+        </h1>
+        <%}%>
+<%if(!user.verified.email){%>
+        <h1>
+            Email not verified
+        </h1>
+        <%}%>
+    <%if(!user.verified.phone){%>
+        <h1>
+            Phone Not verified
+        </h1>
+        <%}%>
+        <%if(!user.verified.innate){%>
+        <h1>
+            Innate not verified
+        </h1>
+        <%}%>
+    </div>
+    <!-- content-wrapper ends -->
+  </div>

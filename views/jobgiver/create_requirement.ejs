@@ -1,0 +1,75 @@
+<% layout('index') -%>
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Post a requirement</h4>
+                        <form class="forms-sample" method="POST">
+                            <div class="form-group">
+                                <label for="profileofrequirement">Profile</label>
+                                <input type="text" class="form-control" id="profileofrequirement" placeholder="Profile"
+                                    name="profile" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="City" name="address"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="noofrequirements">Number of Requirements</label>
+                                <input type="number" class="form-control" id="noofrequirements" placeholder="Number"
+                                    name="requirements" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="minctc">Min CTC</label>
+                                <input type="number" class="form-control" id="minctc" placeholder="Min CTC"
+                                    name="minctc" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="maxctc">Max CTC</label>
+                                <input type="number" class="form-control" min="1" id="maxctc" placeholder="Max CTC"
+                                    name="maxctc" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Job Description</label>
+                                <textarea class="form-control" id="description" rows="4" name="jobdescription"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="workexperience"></label>
+                                <input type="number" class="form-control" id="workexperience"
+                                    placeholder="Work experience" name="workexperience">
+                            </div>
+                            <div class="form-group">
+                                <label for="keywords">Keywords</label>
+                                <input type="text" class="form-control" id="keywords" placeholder="Keywords"
+                                    name="keywords" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <select class="form-control" id="industry" name="industry" required>
+                                    <% for(var i =0 ; i<industry.length; i++){%>
+                                    <option value=<%= industry[i]._id %>> <%= industry[i].name %> </option>
+                                    <%}%>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="functionalarea">Functional Area</label>
+                                <select class="form-control" id="functionalarea" name="functional_area" required>
+                                    <% for(var i =0 ; i<area.length; i++){%>
+                                    <option value=<%= area[i]._id %>> <%= area[i].name %> </option>
+                                    <%}%>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
