@@ -6,7 +6,7 @@
 			 Otp Verification. (TWILIO API USED)
 	- Signin ✔️
 	- Forgot Password ✔️ (Email Used for Reset Password)
-	- CreateRequirement ✔️ ( question pending )
+	- CreateRequirement ✔️ ( question pending Late added )
 	- Dashboard ✔️
 	- Candidates ( Section Pending, Why working on Jobvendor  )
 
@@ -15,8 +15,8 @@
 			View CV (External Link)
 			Reject 
 				 1. Feedback and reject
-				  2. Feedback and show later
+				 2. Feedback and show later
 			Select ( CTC, Joining date, Feedback )
 			Interview (Date, Time, Feedback)
 
-✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
+------------
