@@ -28,3 +28,13 @@
 	- Explore (Working)
 
 ✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
+
+------------
+# Actions
+------------
+|  # | Portal  | Page  | Action  | Detail |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| 1.  | JobGiver  |   |   | |
+|   |   | Dashboard  |   | |
+|   |   |   | 1.View cv, 2. Edit Requirement  | https://trello.com/c/Kr7UFhKD/45-job-giver-summary |
+| | |Create Requirement|||
