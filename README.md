@@ -1,22 +1,20 @@
-# innate
-
 - JobGiver
 	- Signup ✔️
-			 Email Verification. (SMTP MAIL SERVER)
-			 Otp Verification. (TWILIO API USED)
+			1. Email Verification. (SMTP MAIL SERVER)
+			2. Otp Verification. (TWILIO API USED)
 	- Signin ✔️
 	- Forgot Password ✔️ (Email Used for Reset Password)
-	- CreateRequirement ✔️ ( question pending Late added )
+	- CreateRequirement ✔️ ( question pending )
 	- Dashboard ✔️
 	- Candidates ( Section Pending, Why working on Jobvendor  )
 
 		------------
 ###### 		Action on this page
-			View CV (External Link)
-			Reject 
-				 1. Feedback and reject
-				 2. Feedback and show later
-			Select ( CTC, Joining date, Feedback )
-			Interview (Date, Time, Feedback)
+			1. View CV (External Link)
+			2. Reject 
+			3.	 a. Feedback and reject
+					b. Feedback and show later
+			4. Select ( CTC, Joining date, Feedback )
+			5. Interview (Date, Time, Feedback)
 
-------------
+✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
