@@ -36,5 +36,11 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | 1.  | JobGiver  |   |   | |
 |   |   | Dashboard  |   | |
-|   |   |   | 1.View cv, 2. Edit Requirement  | https://trello.com/c/Kr7UFhKD/45-job-giver-summary |
-| | |Create Requirement|||
+|   |   |   | Candidate: 1.View cv,2. Accept/Reject, 3.Interview; Requirement: 1. View posted, 2. Edit, 3. Remove, 4. Status of Req: a) Metrics b)Pay , 5. Post req.  | https://trello.com/c/Kr7UFhKD/45-job-giver-summary |
+|   |   | Create Req.  |   | |
+|   |   |   | Req. : Fill Details, Save, Edit ||
+| 2.  | JobVendor |   |   | |
+|   |   | Profile  |   | |
+|   |   |   | JobGriver associated with, Active Tasks, Status of applied candidate, Generate invoice,  |  |
+|   |   | Explore |   | |
+|   |   |   | Serach: normal, filtered: (company,  profile, loaction, ctc ); recent history, applied profiles, applied companies |  |
